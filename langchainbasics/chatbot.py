@@ -2,10 +2,7 @@ import streamlit as st
 from langchain.chat_models import init_chat_model
 from langchain_groq import ChatGroq
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.prompts import ChatPromptTemplate
-import os
-from dotenv import load_dotenv
 
 st.set_page_config(
     page_title="Simple LangChain Chatbot using groq", page_icon=":robot_face:")
@@ -32,8 +29,6 @@ if "messages" not in st.session_state:
     st.session_state["messages"] = []
 
 # initialize the chosen llm
-
-
 @st.cache_resource
 def get_chain(api_key, model_name):
     if not api_key:
@@ -42,7 +37,7 @@ def get_chain(api_key, model_name):
     # initialize groq model
     llm = ChatGroq(groq_api_key=api_key, model=model_name,
                    temperature=0.7, streaming=True)
-    template = ChatPromptTemplate.message([
+    template = ChatPromptTemplate.from_messages([
         ("system", "You are a helpful assistant that answers question about anything that the user asks."),
         ("human", "{question}")
     ])
