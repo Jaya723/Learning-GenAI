@@ -3,3 +3,5 @@ langgraph
 python-dotenv
 langchain-groq
 streamlit
+langchain-core
+langchain-community 
