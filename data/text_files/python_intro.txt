@@ -1,0 +1,91 @@
+ 
+Python Programming Basics
+
+Python is a high-level, interpreted programming language known for its simplicity and readability. It is widely used in web development, data science, artificial intelligence, and automation.
+
+Python Variables and Data Types
+
+Variables in Python are used to store data values. Python does not require explicit declaration of variable type.
+
+Common data types include:
+
+* int: Integer values (e.g., 10, 20)
+* float: Decimal values (e.g., 10.5, 3.14)
+* str: String values (e.g., "hello")
+* bool: Boolean values (True or False)
+
+Python Control Structures
+
+Control structures manage the flow of execution in a program.
+
+1. Conditional Statements:
+
+* if statement
+* if-else statement
+* if-elif-else ladder
+
+Example:
+if x > 10:
+print("Greater than 10")
+else:
+print("Less or equal to 10")
+
+2. Loops:
+
+* for loop: iterates over a sequence
+* while loop: runs while condition is true
+
+Python Functions
+
+Functions are reusable blocks of code defined using the 'def' keyword.
+
+Example:
+def add(a, b):
+return a + b
+
+Functions help in modular programming and code reusability.
+
+Python Lists
+
+Lists are ordered, mutable collections.
+
+Example:
+my_list = [1, 2, 3, 4]
+
+Common operations:
+
+* append()
+* remove()
+* sort()
+
+Python Dictionaries
+
+Dictionaries store key-value pairs.
+
+Example:
+student = {"name": "John", "age": 20}
+
+They allow fast lookup using keys.
+
+Python for Data Science
+
+Python is widely used in data science with libraries such as:
+
+* NumPy for numerical computing
+* Pandas for data analysis
+* Matplotlib for visualization
+
+Python in Machine Learning
+
+Python supports machine learning using libraries like:
+
+* Scikit-learn
+* TensorFlow
+* PyTorch
+
+These libraries help build predictive models and neural networks.
+
+Conclusion
+
+Python is a versatile and powerful programming language used across multiple domains including web development, automation, artificial intelligence, and data science.
+

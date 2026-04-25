@@ -29,4 +29,6 @@ ToolMessage = Kitchen says "Pasta" + Cashier says "₹500"
 Final LLM call = Waiter comes back and tells customer
                  "Today's special is Pasta and your bill is ₹500"
 
-15. 
+15. In LangChain, a Document object consists of page_content (text chunk) and metadata (additional information like source and page number). During data ingestion, documents are split into smaller chunks, converted into Document objects, embedded using embedding models, and stored in a vector database for retrieval.
+
+16. 
